@@ -3,10 +3,10 @@ package com.worker.wordcloud.mq;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
-import com.worker.wordcloud.WordCloudWorker;
+import com.worker.wordcloud.models.WorkRequest;
+import com.worker.wordcloud.WorkerHandler;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 @Component
@@ -15,14 +15,10 @@ public class Receiver {
 
     public void receiveMessage(String message) {
         if (isValid(message)) {
-            List<String> list = new Gson().fromJson(message, List.class);
-            if (list.get(0).equals("calculate")){
-                list.remove(0);
-                WordCloudWorker.createWorker(list);
-            }
+            WorkRequest workRequest = new Gson().fromJson(message, WorkRequest.class);
+            WorkerHandler.workerHandler.createWorker(workRequest.getWords(), workRequest.getExcludedWords(), workRequest.getCode());
         }
-
-        System.out.println("Received <" + message + ">");
+        System.out.println("Received list of <" + message.length() + "> text");
         latch.countDown();
     }
 

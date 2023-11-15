@@ -1,4 +1,4 @@
-package com.worker.wordcloud.models.wordcloud;
+package com.component.worker.models.wordcloud;
 
 import org.springframework.data.repository.CrudRepository;
 

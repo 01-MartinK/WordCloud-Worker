@@ -1,4 +1,4 @@
-package com.worker.wordcloud.models;
+package com.component.worker.models;
 
 import java.util.ArrayList;
 import java.util.List;

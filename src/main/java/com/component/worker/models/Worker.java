@@ -1,7 +1,7 @@
-package com.worker.wordcloud.models;
+package com.component.worker.models;
 
 import com.google.gson.Gson;
-import com.worker.wordcloud.WorkerHandler;
+import com.component.worker.WorkerHandler;
 
 import java.util.ArrayList;
 import java.util.List;

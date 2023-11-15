@@ -1,8 +1,8 @@
-package com.worker.wordcloud;
+package com.component.worker;
 
-import com.worker.wordcloud.models.Worker;
-import com.worker.wordcloud.models.wordcloud.Wordcloud;
-import com.worker.wordcloud.models.wordcloud.WordcloudRepository;
+import com.component.worker.models.Worker;
+import com.component.worker.models.wordcloud.Wordcloud;
+import com.component.worker.models.wordcloud.WordcloudRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

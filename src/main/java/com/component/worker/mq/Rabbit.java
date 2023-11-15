@@ -1,4 +1,4 @@
-package com.worker.wordcloud.mq;
+package com.component.worker.mq;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

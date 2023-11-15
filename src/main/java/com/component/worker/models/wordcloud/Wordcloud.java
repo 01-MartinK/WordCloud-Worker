@@ -1,4 +1,4 @@
-package com.worker.wordcloud.models.wordcloud;
+package com.component.worker.models.wordcloud;
 
 import jakarta.persistence.*;
 import org.hibernate.Length;

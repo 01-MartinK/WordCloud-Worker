@@ -1,4 +1,4 @@
-package com.worker.wordcloud;
+package com.component.worker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

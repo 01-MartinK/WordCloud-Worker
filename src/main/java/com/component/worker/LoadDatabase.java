@@ -1,6 +1,6 @@
-package com.worker.wordcloud;
+package com.component.worker;
 
-import com.worker.wordcloud.models.wordcloud.WordcloudRepository;
+import com.component.worker.models.wordcloud.WordcloudRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

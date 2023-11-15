@@ -1,4 +1,4 @@
-package com.worker.wordcloud;
+package com.component.worker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

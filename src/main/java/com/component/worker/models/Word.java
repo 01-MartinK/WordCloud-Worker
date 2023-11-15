@@ -1,4 +1,4 @@
-package com.worker.wordcloud.models;
+package com.component.worker.models;
 
 public class Word {
     private String text = "";

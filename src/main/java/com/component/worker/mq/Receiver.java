@@ -1,10 +1,10 @@
-package com.worker.wordcloud.mq;
+package com.component.worker.mq;
 
+import com.component.worker.WorkerHandler;
 import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
-import com.worker.wordcloud.models.WorkRequest;
-import com.worker.wordcloud.WorkerHandler;
+import com.component.worker.models.WorkRequest;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.CountDownLatch;

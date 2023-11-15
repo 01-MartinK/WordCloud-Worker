@@ -27,7 +27,7 @@ public class Rabbit {
 
     @Bean
     Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with("wordcloud.worker.#");
+        return BindingBuilder.bind(queue).to(exchange).with("wordcloud.worker.receive");
     }
 
     @Bean
